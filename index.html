@@ -20,6 +20,7 @@
         }
 
         function draw() {
+            background(map(sin(theta),-1,1,0,255));
             lights();
             let locX = mouseX - width / 2;
             let locY = mouseY - height / 2;
@@ -34,8 +35,7 @@
             pointLight(0, 0, 255, locX+100, locY, 400);
 
             noStroke();
-            //            background(map(sin(theta),-1,1,0,255));
-            //            translate(0,0, 0);
+                        
             fill(230,240,220);
             sphere(100);
             theta += 0.1;
