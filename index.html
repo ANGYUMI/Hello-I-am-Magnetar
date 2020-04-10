@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>gyumi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script type="text/javascript">
+        var theta = 0;
+
+        function setup() {
+            createCanvas(windowWidth, windowHeight, WEBGL);
+        }
+
+        function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+        }
+
+        function draw() {
+            lights();
+            let locX = mouseX - width / 2;
+            let locY = mouseY - height / 2;
+            // to set the light position,
+            // think of the world's coordinate as:
+            // -width/2,-height/2 -------- width/2,-height/2
+            //                |            |
+            //                |     0,0    |
+            //                |            |
+            // -width/2,height/2--------width/2,height/2
+            pointLight(255, 0, 0, locX-100, locY, 400);
+            pointLight(0, 0, 255, locX+100, locY, 400);
+
+            noStroke();
+            //            background(map(sin(theta),-1,1,0,255));
+            //            translate(0,0, 0);
+            fill(230,240,220);
+            sphere(100);
+            theta += 0.1;
+        }
+    </script>
+</head>
+
+<body>
+    <h1><a href="index.html">GYUMI</a></h1>
+    <h2> <a href="https://blog.naver.com/cocolucy99">Bildende</a></h2>
+    <div class="text">
+        <p>dsfsdfdsflskfksfks;dlksdsdf <span><strong>home</strong></span> <strong>strong</strong> <br> fghfghfghfh</p>
+        <h3>home</h3>
+        <h4>page</h4>
+
+        <a href="https://www.instagram.com/mgntc_str/">@mgntc_str</a> <br>
+        <a href="http://www.ewha.ac.kr/ewha/index.do">ewha</a> <br>
+    </div>
+    <div class="list">
+        <ol>
+            <li><a href="https://www.instagram.com/mgntc_str/">a</a></li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+        </ol>
+
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+        </ul>
+    </div>
+
+
+
+    <footer>
+        copyright@
+    </footer>
+</body></html>
