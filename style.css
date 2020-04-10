@@ -5,7 +5,7 @@
 
 body {
     background-color: darkgrey;
-    color: black;
+    color: white;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h2 {
     top: 50px;
 }
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     position: absolute;
 

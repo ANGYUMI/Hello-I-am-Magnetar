@@ -10,7 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     <script type="text/javascript">
         var theta = 0;
-
+var locX = 0;
+        var loxY = 0;
         function setup() {
             createCanvas(windowWidth, windowHeight, WEBGL);
         }
@@ -20,10 +21,10 @@
         }
 
         function draw() {
-            background(map(sin(theta),-1,1,0,255));
+            background(0);
             lights();
-            let locX = mouseX - width / 2;
-            let locY = mouseY - height / 2;
+            locX = mouseX - width / 2;
+           locY = mouseY - height / 2;
             // to set the light position,
             // think of the world's coordinate as:
             // -width/2,-height/2 -------- width/2,-height/2
