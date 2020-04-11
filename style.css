@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-    background-color: aquamarine;
+    background-color: none;
     position: absolute;
 }
 h2 {
-    background-color: aquamarine;
+    background-color: none;
     position: absolute;
     top: 50px;
 }
@@ -34,16 +34,16 @@ ul {
 }
 
 .text {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
 }
 .list{
-         position: fixed;
+         position: absolute;
     bottom: 0px; 
     right:0px;
 }
 .image{
- position: fixed;
+ position: absolute;
     bottom: 0px;    
 }
 img {
